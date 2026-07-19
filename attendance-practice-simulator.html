@@ -277,6 +277,10 @@
     display:flex; align-items:center; justify-content:center;
   }
   .sp-success-card{ background:#fff; border-radius:20px 20px 0 0; margin-top:-22px; padding:26px 24px 30px; text-align:center; position:relative; flex:1; }
+  .sp-warning{
+    margin-top:26px; background:#FDECEC; border:1.5px solid #E5484D; border-radius:12px;
+    padding:16px 18px; color:#C62828; font-size:14px; font-weight:700; line-height:1.6; text-align:center;
+  }
   .sp-service-box{ background:#F3F4F6; border-radius:10px; padding:12px 14px; margin:14px 0; text-align:left; }
   .sp-service-box .lbl{ font-size:10.5px; color:var(--gov-sub); margin-bottom:4px; }
   .sp-service-box .val{ font-size:13px; font-weight:600; color:var(--gov-text); line-height:1.4; }
@@ -302,6 +306,11 @@
   /* ---------- attendance taken (screen 5) ---------- */
   .note-title{ font-size:13px; font-weight:700; color:var(--gov-text); margin:6px 0 8px; }
   .taken-time{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--gov-sub); background:var(--gov-bg); border-radius:8px; padding:6px 12px; display:inline-block; margin-top:6px; }
+  .taken-success{
+    margin-top:22px; background:#EDFAF3; border:1.5px solid #2E9E5B; border-radius:12px;
+    padding:16px 18px; color:#1a5c35; font-size:13.5px; font-weight:600; line-height:1.65; text-align:left;
+  }
+  .taken-success b{ color:#155228; }
 
   .below-phone{ text-align:center; margin-top:20px; }
   .next-btn{
@@ -520,6 +529,7 @@
                     <div class="val">MySkillsFuture – eAttendance – Singpass Login Service</div>
                   </div>
                   <div class="sp-timestamp">13 Jul 2026 at 9:02 AM</div>
+                  <div class="sp-warning">⚠️ This does not mean attendance is taken. You need to click the top left button to return to SkillsFuture portal to submit your attendance.</div>
                 </div>
               </div>
             </div>
@@ -546,7 +556,7 @@
                 <div class="mock-h1" style="text-align:left;">Attendance for Trainee</div>
                 <div class="course-link">Professional Diploma in Digital Innovation (Synchronous and Asynchronous E-Learning)</div>
                 <div class="course-code">PDDI-JUL26</div>
-                <div class="course-mode">Mode of Training: Synchronous, Classroom<br>🕐 13 Jul 2026, 9:00 AM – 1:00 PM</div>
+                <div class="course-mode">Mode of Training: Asynchronous E-learning<br>🕐 13 Jul 2026, 00:00 AM – 11:59 PM</div>
                 <p class="mock-p" style="text-align:left;">You've scanned the QR to confirm attendance for this session. Please check that the contact details below are correct, updating them if needed.</p>
                 <div class="form-field"><label>NRIC/FIN</label><div class="val"><span>S****123A (Example)</span><span class="lock-ic">🔒</span></div></div>
                 <div class="form-field"><label>Name</label><div class="val"><span>Tan Wei Ming (Example)</span><span class="lock-ic">🔒</span></div></div>
@@ -584,6 +594,7 @@
                 <div class="note-title">❗ Note</div>
                 <p class="mock-p small">Your contact details are used for attendance-taking purposes only. If you've updated them recently, please also update your Singpass profile — changes may take up to an hour to reflect for your next e-attendance session.</p>
                 <div class="taken-time">13 Jul 2026 · 9:03 AM</div>
+                <div class="taken-success">✅ This means that you have successfully taken your attendance. You may check your attendance at <b>MySkillsFuture portal &gt; E-services &gt; View E-attendance</b> after 1–2 hours of submission.</div>
               </div>
             </div>
           </div>
